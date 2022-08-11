@@ -1,25 +1,29 @@
-.flexRowContent--menu-link,
+.flexRowContent--top-bar,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 40em) {
-  .flexRowContent--menu-link,
+  .flexRowContent--top-bar,
   .flexRowContent--main-header {
     padding: 0 1rem;
   }
 }
 
 @media screen and (min-width: 80rem) {
-  .flexRowContent--menu-link,
+  .flexRowContent--top-bar,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
   }
 }
 
-.flexRowContent--menu-link {
-  background-color: #03044e;
-  color: #fff;
+.flexRowContent--top-bar {
+  background-color: #25282A;
+  color: #B1B3B3;
+  height: 2rem;
+}
+.flexRowContent--row1-centered {
+  width: 1252px;
 }
 
 .flexRowContent--main-header {
@@ -32,7 +36,7 @@
   background-color: #f0f0f0;
 }
 
-.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+.flexRowContent--top-bar :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
 }

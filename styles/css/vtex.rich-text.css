@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.container--deals .paragraph {
+  margin: 0;
+}
+
 .container--shelfTitle {
   color: #727273;
   justify-content: center;
@@ -14,8 +18,21 @@
   font-weight: 200;
 }
 
-.container--deals .paragraph {
-  margin: 0;
+.container--top-bar {
+  color: #B1B3B3;
+  font-size: 12px;
+}
+
+.paragraph--top-bar {
+  margin-top: 8px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.paragraph--right-border {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #B1B3B3;
 }
 
 .container--link {
