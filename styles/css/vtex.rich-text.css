@@ -23,11 +23,18 @@
   font-size: 12px;
 }
 
+.container--sac-topbar {
+  text-decoration: underline;
+  color: #25282A;
+  padding-right: 1rem;
+}
+
 .paragraph--top-bar {
   margin-top: 8px;
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
 
 .paragraph--right-border {
   border-right-width: 1px;
