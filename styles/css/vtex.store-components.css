@@ -12,6 +12,9 @@
   background-color: #e6f1e6;
   padding: 0px;
 }
+.container{
+  width: 1252;
+}
 
 .newsletter {
   background-color: #03054e;
