@@ -1,18 +1,22 @@
 {
     "footer-layout.mobile": {
         "children": [
-            "flex-layout.row#1-footer-mobile",
-            "flex-layout.row#2-footer-mobile"
+
+            "newsletter",
+            "flex-layout.row#2-accordion-mobile",
+            "flex-layout.row#3-footer-mobile",
+            "flex-layout.row#4-footer-mobile"
         ]
     },
     //----------------------------------------------------------------- layout
-    "flex-layout.row#1-footer-mobile": {
+    "flex-layout.row#2-accordion-mobile": {
         "props": {
             "paddingTop": 4,
-            "paddingBottom": 4
+            "blockClass":"bottom-line"
         },
         "children": [
-            "vtex.menu@2.x:menu#footer-mobile"
+            "vtex.menu@2.x:menu#footer-mobile",
+            "flex-layout.row#social"
         ]
     },
     "vtex.menu@2.x:menu#footer-mobile": {
@@ -45,6 +49,7 @@
     },
     "menu-item#need-help-mobile": {
         "props": {
+            "blockClass": "footer-title",
             "itemProps": {
                 "tagTitle": "Precisa de Ajuda?",
                 "text": "Precisa de Ajuda?"
@@ -56,6 +61,7 @@
     },
     "menu-item#contact-mobile": {
         "props": {
+            "blockClass": "footer-title",
             "itemProps": {
                 "tagTitle": "Fale Conosco",
                 "text": "Fale Conosco"
@@ -66,7 +72,6 @@
         ]
     },
     "vtex.menu@2.x:submenu.accordion#institutional": {
-
         // vtex-menu-2-x-accordionIcon--footer-title 
         "children": [
             "vtex.menu@2.x:menu#institutional-accordion"
@@ -113,67 +118,177 @@
             "orientation": "vertical"
         },
         "children": [
+            "menu-item#phone-number",
+            "menu-item#phone-number",
+            "menu-item#sac",
+            "menu-item#call-center"
         ]
     },
     //-----------------------------------------------------------------
-    "flex-layout.row#2-footer-mobile": {
+    "flex-layout.row#3-footer-mobile": {
         "children": [
-            "flex-layout.col#footer-1-mobile"
+            "flex-layout.col#footer-3-mobile"
+        ],
+        "props": {}
+    },
+    "flex-layout.col#footer-3-mobile": {
+        "children": [
+            "flex-layout.row#payment-methods",
+            "flex-layout.row#certificate"
         ],
         "props": {
-            "blockClass": "payment-methods",
-            "paddingTop": 4,
-            "paddingBottom": 4
+            "blockClass": "footer-icons"
         }
     },
-    "flex-layout.col#footer-1-mobile": {
-        "children": [
-            "accepted-payment-methods",
-            "social-networks",
-            "rich-text#footer-mobile"
-        ],
+    "flex-layout.row#social": {
         "props": {
-            "blockClass": "payment-methods",
-            "paddingTop": 4,
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "social-footer"
+        },
+        "children": [
+            "image#facebook",
+            "image#instagram"
+        ]
+    },
+    "image#facebook": {
+        "props": {
+            "src": "assets/icons/facebook-icon.png",
+            "maxHeight": "25px"
+        }
+    },
+    "image#instagram": {
+        "props": {
+            "src": "assets/icons/instagram-icon.png",
+            "maxHeight": "25px"
+        }
+    },
+    "flex-layout.row#payment-methods": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "icon-gaps",
+            "paddingTop": 5,
+            "paddingBottom": 5
+        },
+        "children": [
+            "image#card1",
+            "image#card2",
+            "image#card3",
+            "image#card4",
+            "image#card5",
+            "image#card6"
+        ]
+    },
+    "image#card1": {
+        "props": {
+            "src": "assets/icons/cartao-mastercard-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card2": {
+        "props": {
+            "src": "assets/icons/cartao-visa-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card3": {
+        "props": {
+            "src": "assets/icons/cartao-american-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card4": {
+        "props": {
+            "src": "assets/icons/cartao-diners-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card5": {
+        "props": {
+            "src": "assets/icons/cartao-elo-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card6": {
+        "props": {
+            "src": "assets/icons/boleto_preto-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "flex-layout.row#certificate": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "icon-gaps"
+        },
+        "children": [
+            "image#certificate1",
+            "image#certificate2"
+        ]
+    },
+    "image#certificate1": {
+        "props": {
+            "src": "assets/logos/logo-vtex-certified.png",
+            "maxHeight": "35px"
+        }
+    },
+    "image#certificate2": {
+        "props": {
+            "src": "assets/logos/lets-encrypt.png",
+            "maxHeight": "26px"
+        }
+    },
+    "flex-layout.row#4-footer-mobile": {
+        "props": {
+            "blockClass": "credits",
             "paddingBottom": 4,
-            "rowGap": 4
-        }
-    },
-    "accepted-payment-methods": {
-        "props": {
-            "paymentMethods": [
-                "MasterCard",
-                "Visa",
-                "Diners Club"
-            ]
-        }
-    },
-    "social-networks": {
-        "props": {
-            "socialNetworks": [
-                {
-                    "name": "Facebook",
-                    "url": "https://www.facebook.com/vtexonline/"
-                },
-                {
-                    "name": "Instagram",
-                    "url": "https://www.instagram.com/vtextruecloud/"
-                },
-                {
-                    "name": "Twitter",
-                    "url": "https://twitter.com/vtexonline"
-                },
-                {
-                    "name": "Youtube",
-                    "url": "https://www.youtube.com/user/VTEXTV"
-                }
-            ]
-        }
+            "paddingTop": 4
+        },
+        "children": [
+            "rich-text#footer-mobile",
+            "flex-layout.row#company-icons"
+        ]
+        
     },
     "rich-text#footer-mobile": {
         "props": {
-            "text": "All stock and product photos are from photos.icons8.com",
-            "blockClass": "footer"
+            "text": "© Copyright 2021 Avanti LTDA - Todos direitos reservados. Rodovia Jose Carlos Daux, 500 Techno Towers - Torre 2 - sala 209 - João Paulo, Florianópolis - SC, 88030-000",
+            "blockClass": "footer",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#company-icons": {
+        "props": {
+            "blockClass": "company-icons",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "center"
+        },
+        "children": [
+            "image#avanti",
+            "image#vtex"
+        ]
+    },
+    "image#avanti": {
+        "props": {
+            "blockClass": "logo-footer",
+            "src": "assets/logos/logo-avanti-color.png",
+            "maxHeight": "12px"
+        }
+    },
+    "image#vtex": {
+        "props": {
+            "src": "assets/logos/logo-vtex.png",
+            "maxHeight": "37px"
         }
     }
 }

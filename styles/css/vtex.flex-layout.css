@@ -59,6 +59,36 @@
   font-size: 14px;
 }
 
+.flexRowContent--social-footer {
+  gap: 2rem;
+  padding-top: 1rem;
+}
+.flexRowContent--bottom-line {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #25282A;
+}
+.flexRowContent--company-icons{
+  align-items: center;
+}
+
+.flexRowContent--icon-gaps {
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.flexRow--credits {
+  background-color: #FFFFFF;
+}
+
+.vtex-flex-layout-0-x-flexRow--credits .vtex-flex-layout-0-x-flexRow--company-icons .vtex-flex-layout-0-x-stretchChildrenWidth:first-child {
+  padding-right: 13px;
+  margin-right: 8px;
+  border-right: 1px
+}
+
 .flexRow--deals {
   background-color: #0F3E99;
   padding: 14px 0px;

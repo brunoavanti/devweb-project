@@ -1,4 +1,9 @@
 .accordionIcon {
     color: transparent;
-    background-image: url("assets/icons/box-icon.png") 
+    background-image: url("assets/icons/blackArrow.svg");
+    height: 12px;
+    width: 20px;
+}
+.accordionIcon--isOpen {
+    transform: scaleY(-1);
 }

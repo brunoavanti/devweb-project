@@ -198,7 +198,7 @@
           }
         }
       },
-      "menu-item#terms-use": {
+      "menu-item#call-center": {
         "props": {
           "id": "menu-item-terms-use",
           "type": "custom",
@@ -213,9 +213,7 @@
           }
         }
       }
-      
-
-    
+          
     /* 
     "vtex.menu@2.x:menu#Products": {
       "props": {
