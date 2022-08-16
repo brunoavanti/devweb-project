@@ -1,0 +1,150 @@
+{
+    "flex-layout.row#2-accordion-mobile": {
+        "children": [
+            "flex-layout.col#2-accordion-mobile"
+        ]
+    },
+    //------------------------- ----- - -- ---- accordion menus
+    "flex-layout.col#2-accordion-mobile": {
+        "props": {
+            "paddingTop": 4,
+            "blockClass": "bottom-line"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#footer-mobile",
+            "flex-layout.row#social"
+        ]
+    },
+    "vtex.menu@2.x:menu#footer-mobile": {
+        "props": {
+            "orientation": "vertical"            
+        },
+        "children": [
+            "menu-item#institutional",
+            "menu-item#need-help-mobile",
+            "menu-item#contact-mobile"
+        ]
+    },
+    "menu-item#institutional": {
+        "props": {
+            "blockClass": "footer-title",
+            "id": "menu-item-category-institutional",
+            "type": "custom",
+            "iconId": null,
+            "itemProps": {
+                "type": "internal",
+                "href": "/",
+                "noFollow": true,
+                "tagTitle": "Institucional",
+                "text": "Institucional"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#institutional"
+        ]
+    },
+    "menu-item#need-help-mobile": {
+        "props": {
+            "blockClass": "footer-title",
+            "itemProps": {
+                "tagTitle": "Precisa de Ajuda?",
+                "text": "Precisa de Ajuda?"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#need-help"
+        ]
+    },
+    "menu-item#contact-mobile": {
+        "props": {
+            "blockClass": "footer-title",
+            "itemProps": {
+                "tagTitle": "Fale Conosco",
+                "text": "Fale Conosco"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#contact"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#institutional": {
+        "children": [
+            "vtex.menu@2.x:menu#institutional-accordion"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#need-help": {
+        "children": [
+            "vtex.menu@2.x:menu#need-help-accordion"
+        ]
+    },
+    "vtex.menu@2.x:submenu.accordion#contact": {
+        "children": [
+            "vtex.menu@2.x:menu#contact-mobile"
+        ]
+    },
+    //---------------------------------------- acoordion declarations
+    "vtex.menu@2.x:menu#institutional-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "accordion-menu-itens"
+        },
+        "children": [
+            "menu-item#brand",
+            "menu-item#about-us",
+            "menu-item#be-a-partner",
+            "menu-item#be-a-reseller",
+            "menu-item#corporate",
+            "menu-item#catalog"
+        ]
+    },
+    "vtex.menu@2.x:menu#need-help-accordion": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "accordion-menu-itens"
+        },
+        "children": [
+            "menu-item#payment-methods",
+            "menu-item#shipping",
+            "menu-item#privacy-policy",
+            "menu-item#warranty",
+            "menu-item#terms-use"
+        ]
+    },
+    "vtex.menu@2.x:menu#contact-mobile": {
+        "props": {
+            "orientation": "vertical",
+            "blockClass": "accordion-menu-itens"
+        },
+        "children": [
+            "menu-item#phone-number",
+            "menu-item#phone-number",
+            "menu-item#sac",
+            "menu-item#call-center"
+        ]
+    },
+    "flex-layout.row#social": { // ---------------------------------social banner
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "social-footer"
+        },
+        "children": [
+            "image#facebook",
+            "image#instagram"
+        ]
+    },
+    "image#facebook": {
+        "props": {
+            "src": "assets/icons/facebook-icon.png",
+            "maxHeight": "25px"
+        }
+    },
+    "image#instagram": {
+        "props": {
+            "src": "assets/icons/instagram-icon.png",
+            "maxHeight": "25px"
+        }
+    }
+}

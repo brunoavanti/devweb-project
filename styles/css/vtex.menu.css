@@ -7,3 +7,17 @@
 .accordionIcon--isOpen {
     transform: scaleY(-1);
 }
+
+.styledLinkContent--footer-title {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.menuContainer--accordion-menu-itens 
+:global(.vtex-menu-2-x-menuItem){
+    padding-top: 4px;
+    padding-bottom: 4px;    
+}

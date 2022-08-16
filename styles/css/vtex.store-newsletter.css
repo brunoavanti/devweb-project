@@ -1,0 +1,40 @@
+.newsletterForm {
+    padding-left: 45px;
+    padding-right: 45px;
+    row-gap: 8px;
+}
+
+.newsletterForm :global(.vtex-styleguide-9-x-input) {
+    background-color: transparent;
+}
+
+.newsletterForm :global(.vtex-input-prefix__group) {
+    border: 1px solid #25282A;
+    border-radius: 0;
+    height: 48px;
+}
+
+.emailInputContainer,
+.nameInputContainer {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+
+.formSubmitContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+    background-color: transparent;
+    border: 0px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    color: #441AFA;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,98 @@
+{
+    "flex-layout.row#3-footer-mobile": {
+        "children": [
+            "flex-layout.col#footer-3-mobile"
+        ],
+        "props": {}
+    },
+    "flex-layout.col#footer-3-mobile": {
+        "children": [
+            "flex-layout.row#payment-methods",
+            "flex-layout.row#certificate"
+        ],
+        "props": {
+            "blockClass": "footer-icons"
+        }
+    },
+    
+    "flex-layout.row#payment-methods": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "icon-gaps",
+            "paddingTop": 5,
+            "paddingBottom": 5
+        },
+        "children": [
+            "image#card1",
+            "image#card2",
+            "image#card3",
+            "image#card4",
+            "image#card5",
+            "image#card6"
+        ]
+    },
+    "image#card1": {
+        "props": {
+            "src": "assets/icons/cartao-mastercard-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card2": {
+        "props": {
+            "src": "assets/icons/cartao-visa-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card3": {
+        "props": {
+            "src": "assets/icons/cartao-american-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card4": {
+        "props": {
+            "src": "assets/icons/cartao-diners-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card5": {
+        "props": {
+            "src": "assets/icons/cartao-elo-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "image#card6": {
+        "props": {
+            "src": "assets/icons/boleto_preto-icon.png",
+            "maxHeight": "17px"
+        }
+    },
+    "flex-layout.row#certificate": {
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": "icon-gaps"
+        },
+        "children": [
+            "image#certificate1",
+            "image#certificate2"
+        ]
+    },
+    "image#certificate1": {
+        "props": {
+            "src": "assets/logos/logo-vtex-certified.png",
+            "maxHeight": "35px"
+        }
+    },
+    "image#certificate2": {
+        "props": {
+            "src": "assets/logos/lets-encrypt.png",
+            "maxHeight": "26px"
+        }
+    }
+}

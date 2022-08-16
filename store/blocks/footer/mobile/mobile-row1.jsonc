@@ -1,0 +1,70 @@
+{
+	"flex-layout.row#1-newsletter": {
+		"props": {
+			"blockClass": "newsletter-row",
+			"paddingTop": 4,
+			"paddingBottom": 4
+		},
+		"children": [
+			"flex-layout.col#1-newsletter"
+		]
+	},
+	"flex-layout.col#1-newsletter": {
+		"props": {
+			"blockClass": "newsletter-col"
+		},
+		"children": [
+			"flex-layout.row#newsletter-logo",
+			"rich-text#newsletter-title",
+			"rich-text#newsletter-description",
+			"newsletter-form"
+		]
+	},
+	"flex-layout.row#newsletter-logo": {
+		"props": {
+			"blockClass": "newsletter-row",
+			"horizontalAlign": "center"
+		},
+		"children": [      "image#logo-avanti-footer"       ]
+	},
+	"image#logo-avanti-footer": {
+		"props": {
+			"src": "assets/logos/footer-logo-avanti.png",
+			"maxHeight": "85px"
+		}
+	},
+	"newsletter-form": {
+		"children": [
+			"newsletter-input-name",
+			"newsletter-input-email",
+			"newsletter-submit"
+		]
+	},
+	"newsletter-input-name":{
+		"props": {
+			"placeholderText": "Nome"
+		}
+	},
+	"newsletter-input-email":{
+		"props": {
+			"placeholderText": "Email"
+		}
+	},
+	"newsletter-submit":{
+		"props": {
+			"submitButtonLabel": "CADASTRAR"
+		}
+	},
+	"rich-text#newsletter-title": {
+		"props": {
+			"text": "NEWSLETTER",
+			"blockClass": "newsletter-title"
+		}
+	},
+	"rich-text#newsletter-description": {
+		"props": {
+			"text": " Receba promoções e descontos especiais em primeira mão. ",
+			"blockClass": "newsletter-description"
+		}
+	}
+}

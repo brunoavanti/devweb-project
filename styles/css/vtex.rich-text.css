@@ -35,6 +35,34 @@
   padding-left: 1rem;
 }
 
+.container--newsletter-description {
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+.container--newsletter-title {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.paragraph--newsletter-title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #441AFA;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.paragraph--newsletter-description {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.paragraph--credits-footer {
+  font-size: 11px;
+  line-height: 15px;
+}
 
 .paragraph--right-border {
   border-right-width: 1px;

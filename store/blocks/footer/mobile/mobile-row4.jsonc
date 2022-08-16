@@ -1,0 +1,46 @@
+{     
+    "flex-layout.row#4-footer-mobile": {
+        "props": {
+            "blockClass": "credits",
+            "paddingBottom": 10
+        },
+        "children": [
+            "rich-text#footer-mobile",
+            "flex-layout.row#company-icons"
+        ]
+    },
+    "rich-text#footer-mobile": {
+        "props": {
+            "text": "© Copyright 2021 Avanti LTDA - Todos direitos reservados. Rodovia Jose Carlos Daux, 500 Techno Towers - Torre 2 - sala 209 - João Paulo, Florianópolis - SC, 88030-000",
+            "blockClass": "credits-footer",
+            "textAlignment": "CENTER"
+        }
+    },
+    "flex-layout.row#company-icons": {
+        "props": {
+            "blockClass": "company-icons",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "horizontalAlign": "center",
+            "verticalAlign": "center"
+        },
+        "children": [
+            "image#avanti",
+            "image#vtex"
+        ]
+    },
+    "image#avanti": {
+        "props": {
+            "blockClass": "logo-footer",
+            "src": "assets/logos/logo-avanti-color.png",
+            "maxHeight": "12px"
+        }
+    },
+    "image#vtex": {
+        "props": {
+            "src": "assets/logos/logo-vtex.png",
+            "maxHeight": "37px"
+        }
+    }
+}
