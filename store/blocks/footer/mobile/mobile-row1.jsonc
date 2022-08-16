@@ -25,7 +25,9 @@
 			"blockClass": "newsletter-row",
 			"horizontalAlign": "center"
 		},
-		"children": [      "image#logo-avanti-footer"       ]
+		"children": [
+			"image#logo-avanti-footer"
+		]
 	},
 	"image#logo-avanti-footer": {
 		"props": {
@@ -40,17 +42,17 @@
 			"newsletter-submit"
 		]
 	},
-	"newsletter-input-name":{
+	"newsletter-input-name": {
 		"props": {
 			"placeholderText": "Nome"
 		}
 	},
-	"newsletter-input-email":{
+	"newsletter-input-email": {
 		"props": {
 			"placeholderText": "Email"
 		}
 	},
-	"newsletter-submit":{
+	"newsletter-submit": {
 		"props": {
 			"submitButtonLabel": "CADASTRAR"
 		}

@@ -21,11 +21,13 @@
 
 }
 
-.formSubmitContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-    margin-bottom: 12px;
+@media only screen and (min-width: 640px) {
+    .formSubmitContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 }
 
 .formSubmitContainer :global(.vtex-button) {

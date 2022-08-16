@@ -1,0 +1,20 @@
+{
+    "flex-layout.row#footer-1-desktop": {
+        "children": [
+            "image#logo-avanti-footer",
+            "flex-layout.col#newsletter-text",
+            "newsletter-form"
+        ],
+        "props": {
+            "blockClass": "footer-row1",
+            "horizontalAlign": "left",
+            "preventHorizontalStretch": "true"
+        }
+    },
+    "flex-layout.col#newsletter-text": {
+        "children": [
+            "rich-text#newsletter-title",
+            "rich-text#newsletter-description"
+        ]
+    }
+}

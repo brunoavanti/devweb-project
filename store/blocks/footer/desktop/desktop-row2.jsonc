@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#footer-2-desktop": {
+        "children": [
+            "accepted-payment-methods"
+        ],
+        "props": {
+            "blockClass": "payment-methods"
+        }
+    }
+}
