@@ -1,13 +1,5 @@
 {
-    "sticky-layout#4-desktop": {
-        "props": {
-            "blockClass": "sticky-header"
-        },
-        "children": [
-            "flex-layout.row#4-desktop"
-        ]
-    },
-    "flex-layout.row#4-desktop": {
+    "flex-layout.row#2-header-desktop": {
         "props": {
             "blockClass": "main-header",
             "horizontalAlign": "center",
@@ -36,6 +28,7 @@
     },
     "logo#desktop": {
         "props": {
+            "blockClass":"header-logo",
             "title": "Logo",
             "href": "/",
             "url": "assets/icons/avanti2x.png",
@@ -63,5 +56,4 @@
             "showIconProfile": true
         }
     }
-
 }

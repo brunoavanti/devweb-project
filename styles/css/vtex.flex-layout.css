@@ -19,10 +19,16 @@
   }
 }
 
-.flexRowContent--top-bar {
+.flexRowContent--space-between {
+  justify-content: space-between;
+}
+
+.flexRow--top-bar {
   background-color: #25282A;
   color: #B1B3B3;
   height: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .flexRowContent--row1-centered {

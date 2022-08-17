@@ -1,0 +1,51 @@
+{
+    "flex-layout.row#1-mobile": {
+        "props": {
+            "blockClass": "top-bar",
+            "fullWidth": true,
+            "verticalAling": "center"
+        },
+        "children": [
+            "rich-text#free-shiping-test"
+        ]
+    },
+    "rich-text#free-shiping-test": {
+        "props": {
+            "blockClass":"shiping-topbar",
+            "text": "Frete Gratis acima de R$299,00 para Região Sudeste."
+        }
+    },
+    "flex-layout.row#2-mobile": {
+        "children": [
+            "drawer",
+            "logo#mobile",
+            //"flex-layout.col#spacer",
+            //"login",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": [
+                "main-header-mobile",
+                "space-between"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "drawer": {
+        "children": [
+            "menu#drawer"
+        ]
+    },
+    "menu#drawer": {
+        "children": [
+            "menu-item#category-apparel",
+            "menu-item#category-home",
+            "menu-item#more"
+        ],
+        "props": {
+            "orientation": "vertical"
+        }
+    }
+}
