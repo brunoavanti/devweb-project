@@ -1,220 +1,242 @@
 {
-    "menu-item#brand": {
-        "props": {
-          "id": "menu-item-brand",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "A Marca",
-            "text": "A Marca"
-          }
-        }
-      },
-      "menu-item#about-us": {
-        "props": {
-          "id": "menu-item-about-us",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/about-us",
-            "noFollow": false,
-            "tagTitle": "Sobre Nós",
-            "text": "Sobre Nós"
-          }
-        }
-      },
-      "menu-item#be-a-partner": {
-        "props": {
-          "id": "menu-item-be-a-partner",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Seja um Revendedor",
-            "text": "Seja um Revendedor"
-          }
-        }
-      },
-      "menu-item#be-a-reseller": {
-        "props": {
-          "id": "menu-item-be-a-reseller",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Seja um Revendedor",
-            "text": "Seja um Revendedor"
-          }
-        }
-      },
-      "menu-item#corporate": {
-        "props": {
-          "id": "menu-item-corporate",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Vendas Corporativas",
-            "text": "Vendas Corporativas"
-          }
-        }
-      },
-      "menu-item#catalog": {
-        "props": {
-          "id": "menu-item-catalog",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Catálogo",
-            "text": "Catálogo"
-          }
-        }
-      },
-      "menu-item#payment-methods": {
-        "props": {
-          "id": "menu-item-payment-methods",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "Formas de Pagamento",
-            "text": "Formas de Pagamento"
-          }
-        }
-      },
-      "menu-item#shipping": {
-        "props": {
-          "id": "menu-item-shipping",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "Frete e Prazo de Entrega",
-            "text": "Frete e Prazo de Entrega"
-          }
-        }
-      },
-      "menu-item#privacy-policy": {
-        "props": {
-          "id": "menu-item-privacy-policy",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/decoration/tvs",
-            "noFollow": true,
-            "tagTitle": "Política de Privacidade",
-            "text": "Política de Privacidade"
-          }
-        }
-      },
-      "menu-item#warranty": {
-        "props": {
-          "id": "menu-item-warranty",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "Garantia",
-            "text": "Garantia"
-          }
-        }
-      },
-      "menu-item#terms-use": {
-        "props": {
-          "id": "menu-item-terms-use",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "Termos e Condições de Uso",
-            "text": "Termos e Condições de Uso"
-          }
-        }
-      },
-      
-      
-      
-      
-      "menu-item#phone-number": {
-        "props": {
-          "id": "menu-item-phone-number",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "(XX) XXXX XXXX",
-            "text": "(XX) XXXX XXXX"
-          }
-        }
-      },
-      "menu-item#sac": {
-        "props": {
-          "id": "menu-item-sac",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "sac@avanti.com.br",
-            "text": "sac@avanti.com.br"
-          }
-        }
-      },
-      "menu-item#call-center": {
-        "props": {
-          "id": "menu-item-terms-use",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "internal",
-            "href": "/",
-            "noFollow": true,
-            "tagTitle": "Central de Atendimento",
-            "text": "Central de Atendimento"
-          }
-        }
+  "menu-item#institutional-footer-title": {
+    "props": {
+      "blockClass": "footer-title",
+      "itemProps": {
+        "tagTitle": "Institucional",
+        "text": "Institucional"
       }
-          
-    /* 
+    }
+  },
+  "menu-item#need-help-footer-title": {
+    "props": {
+      "blockClass": "footer-title",
+      "itemProps": {
+        "tagTitle": "Precisa de Ajuda?",
+        "text": "Precisa de Ajuda?"
+      }
+    }
+  },
+  "menu-item#contact-footer-title": {
+    "props": {
+      "blockClass": "footer-title",
+      "itemProps": {
+          "tagTitle": "Fale Conosco",
+          "text": "Fale Conosco"
+      }
+  }
+  },
+  "menu-item#brand": {
+    "props": {
+      "id": "menu-item-brand",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "A Marca",
+        "text": "A Marca"
+      }
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": false,
+        "tagTitle": "Sobre Nós",
+        "text": "Sobre Nós"
+      }
+    }
+  },
+  "menu-item#be-a-partner": {
+    "props": {
+      "id": "menu-item-be-a-partner",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Seja um Revendedor",
+        "text": "Seja um Revendedor"
+      }
+    }
+  },
+  "menu-item#be-a-reseller": {
+    "props": {
+      "id": "menu-item-be-a-reseller",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Seja um Revendedor",
+        "text": "Seja um Revendedor"
+      }
+    }
+  },
+  "menu-item#corporate": {
+    "props": {
+      "id": "menu-item-corporate",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Vendas Corporativas",
+        "text": "Vendas Corporativas"
+      }
+    }
+  },
+  "menu-item#catalog": {
+    "props": {
+      "id": "menu-item-catalog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Catálogo",
+        "text": "Catálogo"
+      }
+    }
+  },
+  "menu-item#payment-methods": {
+    "props": {
+      "id": "menu-item-payment-methods",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Formas de Pagamento",
+        "text": "Formas de Pagamento"
+      }
+    }
+  },
+  "menu-item#shipping": {
+    "props": {
+      "id": "menu-item-shipping",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Frete e Prazo de Entrega",
+        "text": "Frete e Prazo de Entrega"
+      }
+    }
+  },
+  "menu-item#privacy-policy": {
+    "props": {
+      "id": "menu-item-privacy-policy",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/decoration/tvs",
+        "noFollow": true,
+        "tagTitle": "Política de Privacidade",
+        "text": "Política de Privacidade"
+      }
+    }
+  },
+  "menu-item#warranty": {
+    "props": {
+      "id": "menu-item-warranty",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Garantia",
+        "text": "Garantia"
+      }
+    }
+  },
+  "menu-item#terms-use": {
+    "props": {
+      "id": "menu-item-terms-use",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Termos e Condições de Uso",
+        "text": "Termos e Condições de Uso"
+      }
+    }
+  },
+  "menu-item#phone-number": {
+    "props": {
+      "id": "menu-item-phone-number",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "(XX) XXXX XXXX",
+        "text": "(XX) XXXX XXXX"
+      }
+    }
+  },
+  "menu-item#sac": {
+    "props": {
+      "id": "menu-item-sac",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "sac@avanti.com.br",
+        "text": "sac@avanti.com.br"
+      }
+    }
+  },
+  "menu-item#call-center": {
+    "props": {
+      "id": "menu-item-terms-use",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Central de Atendimento",
+        "text": "Central de Atendimento"
+      }
+    }
+  }
+  /* 
     "vtex.menu@2.x:menu#Products": {
       "props": {
         "orientation": "vertical"
@@ -607,5 +629,4 @@
       }
     } 
     */
-  }
-  
+}

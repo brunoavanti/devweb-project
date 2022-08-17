@@ -1,20 +1,47 @@
 {
     "flex-layout.row#footer-1-desktop": {
         "children": [
-            "image#logo-avanti-footer",
-            "flex-layout.col#newsletter-text",
-            "newsletter-form"
+            "flex-layout.col#logo-avanti-footer-desktop",
+            "flex-layout.col#newsletter-text-desktop",
+            "flex-layout.col#newsletter-footer-desktop"
         ],
         "props": {
-            "blockClass": "footer-row1",
-            "horizontalAlign": "left",
+            "blockClass":"footer-row-1-desktop",
             "preventHorizontalStretch": "true"
         }
     },
-    "flex-layout.col#newsletter-text": {
+    "flex-layout.col#logo-avanti-footer-desktop": {
+        "children": [
+            "image#logo-avanti-footer"
+        ],
+        "props": {
+            "verticalAling": "center"
+        }
+    },
+    "flex-layout.col#newsletter-text-desktop": {
         "children": [
             "rich-text#newsletter-title",
             "rich-text#newsletter-description"
-        ]
+        ],
+        "props": {
+            "verticalAling": "top",
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.col#newsletter-footer-desktop": {
+        "children": [
+            "newsletter-form#desktop"
+        ],
+        "props": {}
+    },
+    "newsletter-form#desktop": {
+        "children": [
+            "newsletter-input-name",
+            "newsletter-input-email",
+            "newsletter-submit"
+        ],
+        "props": {
+            "blockClass": "desktop"
+        }
     }
 }

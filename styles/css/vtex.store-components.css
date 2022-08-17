@@ -13,17 +13,7 @@
   padding: 0px;
 }
 .container{
-  width: 1252;
-}
-
-.newsletter{
-  background-color: ##EEEEEE;
-  max-width: 1528px;
-  margin: 0 auto;
-}
-
-.newsletter .container {
-  padding: 60px 10px;
+  max-width: 1252px;
 }
 
 .label {

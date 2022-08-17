@@ -4,14 +4,28 @@
     row-gap: 8px;
 }
 
-.newsletterForm :global(.vtex-styleguide-9-x-input) {
-    background-color: transparent;
+.newsletterForm--desktop {
+    display: flex;
+    padding: 0;
+    width: max-content;
 }
 
-.newsletterForm :global(.vtex-input-prefix__group) {
+.newsletterForm--desktop :global(.vtex-input-prefix__group) {
+    border: 1px solid #B1B3B3;
+    border-radius: 0;
+    height: 40px;
+    width: 260px; 
+    margin: 0px 6px;
+}
+
+.newsletterForm--mobile :global(.vtex-input-prefix__group) {
     border: 1px solid #25282A;
     border-radius: 0;
     height: 48px;
+}
+
+.newsletterForm :global(.vtex-styleguide-9-x-input) {
+    background-color: transparent;
 }
 
 .emailInputContainer,
@@ -21,13 +35,11 @@
 
 }
 
-@media only screen and (min-width: 640px) {
-    .formSubmitContainer {
-        display: flex;
-        justify-content: center;
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
+.formSubmitContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .formSubmitContainer :global(.vtex-button) {

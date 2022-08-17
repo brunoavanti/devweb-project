@@ -17,7 +17,7 @@
 			"flex-layout.row#newsletter-logo",
 			"rich-text#newsletter-title",
 			"rich-text#newsletter-description",
-			"newsletter-form"
+			"newsletter-form#mobile"
 		]
 	},
 	"flex-layout.row#newsletter-logo": {
@@ -35,12 +35,15 @@
 			"maxHeight": "85px"
 		}
 	},
-	"newsletter-form": {
+	"newsletter-form#mobile": {
 		"children": [
 			"newsletter-input-name",
 			"newsletter-input-email",
 			"newsletter-submit"
-		]
+		],
+		"props":{
+			"blockClass":"mobile"
+		}
 	},
 	"newsletter-input-name": {
 		"props": {
@@ -65,7 +68,7 @@
 	},
 	"rich-text#newsletter-description": {
 		"props": {
-			"text": " Receba promoções e descontos especiais em primeira mão. ",
+			"text": " Receba promoções e descontos especiais \n em primeira mão. ",
 			"blockClass": "newsletter-description"
 		}
 	}

@@ -1,16 +1,25 @@
 {
     "flex-layout.row#footer-3-desktop": {
         "children": [
-            "rich-text#footer"
+            "flex-layout.col#payment-methods-desktop",
+            "flex-layout.col#certificate-desktop"
+        ],
+        "props": {}
+    },
+    "flex-layout.col#payment-methods-desktop": {
+        "children": [
+            "flex-layout.row#payment-methods"
         ],
         "props": {
-            "blockClass": "credits"
+            "horizontalAlign": "left"
         }
     },
-    "rich-text#footer": {
+    "flex-layout.col#certificate-desktop": {
+        "children": [
+            "flex-layout.row#certificate"
+        ],
         "props": {
-            "text": "All stock and product photos are from photos.icons8.com",
-            "blockClass": "footer"
+            "horizontalAlign": "right"
         }
     }
 }

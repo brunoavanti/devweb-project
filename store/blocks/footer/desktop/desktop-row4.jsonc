@@ -1,10 +1,33 @@
 {
     "flex-layout.row#footer-4-desktop": {
         "children": [
-            "accepted-payment-methods"
+            "flex-layout.col#credits-footer-desktop",
+            "flex-layout.col#company-icons-desktop"
         ],
         "props": {
-            "blockClass": "payment-methods"
+            "blockClass": "credits"
+        }
+    },
+    "flex-layout.col#credits-footer-desktop": {
+        "children": [
+            "rich-text#credits-footer-desktop"
+        ],
+        "props": {
+            "horizontalAlign": "left"
+        }
+    },
+    "flex-layout.col#company-icons-desktop": {
+        "children": [
+            "flex-layout.row#company-icons"
+        ],
+        "props": {
+            "horizontalAlign": "right"
+        }
+    },
+    "rich-text#credits-footer-desktop": {
+        "props": {
+            "text": "© Copyright 2021 Avanti LTDA - Todos direitos reservados. \n Rodovia Jose Carlos Daux, 500 Techno Towers - Torre 2 - sala 209 - João Paulo, Florianópolis - SC, 88030-000",
+            "blockClass": "credits-footer"
         }
     }
 }

@@ -10,8 +10,8 @@
             "flex-layout.row#payment-methods",
             "flex-layout.row#certificate"
         ],
-        "props": {
-            "blockClass": "footer-icons"
+        "props":{
+            "horizontalAlign":"center"
         }
     },
     
@@ -20,7 +20,6 @@
             "preserveLayoutOnMobile": true,
             "preventHorizontalStretch": true,
             "preventVerticalStretch": true,
-            "horizontalAlign": "center",
             "blockClass": "icon-gaps",
             "paddingTop": 5,
             "paddingBottom": 5

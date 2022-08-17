@@ -20,12 +20,12 @@
             "orientation": "vertical"            
         },
         "children": [
-            "menu-item#institutional",
+            "menu-item#institutional-mobile",
             "menu-item#need-help-mobile",
             "menu-item#contact-mobile"
         ]
     },
-    "menu-item#institutional": {
+    "menu-item#institutional-mobile": {
         "props": {
             "blockClass": "footer-title",
             "id": "menu-item-category-institutional",
