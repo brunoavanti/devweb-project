@@ -1,0 +1,9 @@
+.container :global(.vtex-button) {
+    background-image: url("assets/icons/user-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profileIcon {
+    color: transparent;
+}

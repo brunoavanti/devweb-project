@@ -1,0 +1,13 @@
+.minicartIconContainer {
+    color: transparent;
+}
+
+.openIconContainer{
+    padding-right: 0;
+}
+
+.openIconContainer :global(.vtex-button) {
+    background-image: url("assets/icons/cart-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
