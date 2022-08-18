@@ -18,6 +18,17 @@
 .logoContainer{
   padding: 0;
 }
+.searchBarIcon{
+  color: white;
+}
+.searchBarInnerContainer :global(.vtex-input__suffix){
+  background-color: #441AFA;
+  border-radius: 0px;
+}
+.searchBarContainer{
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
 
 .label {
   color: #fff;

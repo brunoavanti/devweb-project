@@ -33,16 +33,8 @@
   "sticky-layout#1-mobile": {
     "children": [
       "flex-layout.row#1-mobile",
-      "flex-layout.row#2-mobile"
-      //"flex-layout.row#3-mobile"
-    ]
-  },  
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#category-menu"
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#3-mobile"
     ]
   }
   

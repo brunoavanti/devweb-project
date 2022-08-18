@@ -1,0 +1,98 @@
+{
+    /* 
+    ------------------mobile------------------
+    drawer geral
+    menu item itens "departamento" 1
+        submenu acordion acordion 1 nivel
+        menu 2x
+        menu item itens "categoria 1"
+            submenu acordion sub accordion segundo nivel
+            menu2x
+            menuitem subcategoria 1
+
+    ------------------desktop------------------
+
+    menu2x geral
+    menu item todos os departamentos 
+        submenu
+        menu 2x 
+        menu item departamentos1, 2 ,3
+            submenu
+            sub menu 2x
+            menu item categorias 1, 2
+                submenu
+                sub menu2x
+                menu item sub-categorias
+    --------
+    menu item dep1 e depar 2
+        sub menu 
+        menu 2x
+        cat 1 cat 2
+    --------
+    menu item/rich text novidades outlet
+    */
+    "menu#drawer": {
+        "children": [
+            "menu-item#news",
+            "menu-item#outlet",
+            "menu-item#department1-accordion",
+            "menu-item#department2-accordion",
+            "menu-item#department3-accordion",
+            "menu-item#department4",
+            "menu-item#my-account",
+            "menu-item#partner-stores"
+        ],
+        "props": {
+            "blockClass": ["full-width"],
+            "orientation": "vertical"
+        }
+    },
+    
+
+    ///// -------------------------------------- acordion department 1
+    "menu-item#department1-accordion": {
+        "props": {
+            "blockClass": ["drawer-margin","dynamic-title"],
+            "id": "menu-item-department1-accordion",
+            "itemProps": {
+                "tagTitle": "department1",
+                "text": "DEPARTAMENTO 1"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#department-accordion"
+        ]
+    },
+    ///// -------------------------------------- acordion department 2
+    "menu-item#department2-accordion": {
+        "props": {
+            "blockClass": ["drawer-margin","dynamic-title"],
+            "id": "menu-item-department2-accordion",
+            "itemProps": {
+                "tagTitle": "department2",
+                "text": "DEPARTAMENTO 2"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#department-accordion"
+        ]
+    },
+    ///// -------------------------------------- acordion department 3
+    "menu-item#department3-accordion": {
+        "props": {
+            "blockClass": ["drawer-margin","dynamic-title"],
+            "id": "menu-item-department3-accordion",
+            "itemProps": {
+                "tagTitle": "department3",
+                "text": "DEPARTAMENTO 3"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#department-accordion"
+        ]
+    }
+
+     
+
+
+}

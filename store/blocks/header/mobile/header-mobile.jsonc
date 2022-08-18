@@ -11,7 +11,7 @@
     },
     "rich-text#free-shiping-test": {
         "props": {
-            "blockClass":"shiping-topbar",
+            "blockClass": "shiping-topbar",
             "text": "Frete Gratis acima de R$299,00 para Região Sudeste."
         }
     },
@@ -37,15 +37,17 @@
         "children": [
             "menu#drawer"
         ]
-    },
-    "menu#drawer": {
-        "children": [
-            "menu-item#category-apparel",
-            "menu-item#category-home",
-            "menu-item#more"
-        ],
+    },     
+    "flex-layout.row#3-mobile": {
         "props": {
-            "orientation": "vertical"
-        }
-    }
+            "blockClass": [
+                "main-header-mobile"
+            ],
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        },
+        "children": [
+            "search-bar"
+        ]
+    } 
 }
