@@ -65,6 +65,16 @@
 .menuItem--drawer-category {
     margin-top: 8px;
     margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 19px;    
+}
+
+.styledLinkContent--drawer-subcategory{
+    color: #8C8F90;    
+}
+.styledLinkContent--drawer-see-more{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 
