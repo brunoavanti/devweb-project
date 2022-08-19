@@ -22,9 +22,27 @@
       "blockClass": "sticky-header"
     },
     "children": [
-      "flex-layout.row#2-header-desktop"
+      "flex-layout.row#stiker-header-desktop"
     ]
-  }, //------------------------------------------desktop
+  },
+  "flex-layout.row#stiker-header-desktop": {
+    "props":{
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#stiker-header-desktop"
+    ]
+  },
+  "flex-layout.col#stiker-header-desktop": {
+    "props":{
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#2-header-desktop",
+      "flex-layout.row#3-header-desktop"
+    ]
+  },
+  //------------------------------------------desktop
   "header-layout.mobile": {
     "children": [
       "sticky-layout#1-mobile"
@@ -37,5 +55,4 @@
       "flex-layout.row#3-mobile"
     ]
   }
-  
 }

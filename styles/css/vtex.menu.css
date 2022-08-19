@@ -23,16 +23,48 @@
     font-weight: bold;
 }
 
+
+/* @media screen and (min-width: 82em) {
+    .actionsContainer--quickview {
+      padding: 0 2.5rem 2.5rem 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 40em) {
+    .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+      display: none;
+    }
+  } */
+@media screen and (max-width: 1000px) {
+    .styledLinkContent--my-account,
+    .styledLinkContent--drawer-partner {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .menuItem--drawer-margin {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .menuItem--drawer-margin--isClosed {
+        border: solid;
+        border-color: #EEEEEE;
+        border-width: 1px;
+    }
+}
+
+@media screen and (min-width: 1000px)  {
+    .menuContainerNav--main-menu-header-desktop .styledLinkContainer{
+        padding: 0;
+    }
+    
+}
+
 .styledLinkContent--my-account {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     color: #441AFA;
     font-weight: bold;
 }
 
 .styledLinkContent--drawer-partner {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     color: #25282A;
     font-weight: bold;
 }
@@ -41,38 +73,29 @@
     background-color: #EEEEEE;
 }
 
-.menuItem--drawer-margin {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.menuItem--drawer-margin--isClosed {
-    border: solid;
-    border-color: #EEEEEE;
-    border-width: 1px;
-}
-
 .menuItem--drawer-margin--isOpen .styledLinkContent--drawer-margin {
     color: #441AFA;
     font-weight: bold;
 }
+
 .menuItem--drawer-category--isOpen .styledLinkContent--drawer-category {
     color: #441AFA;
     font-weight: bold;
 }
 
-.menuItem--drawer-subcategory, 
+.menuItem--drawer-subcategory,
 .menuItem--drawer-category {
     margin-top: 8px;
     margin-bottom: 8px;
     font-size: 14px;
-    line-height: 19px;    
+    line-height: 19px;
 }
 
-.styledLinkContent--drawer-subcategory{
-    color: #8C8F90;    
+.styledLinkContent--drawer-subcategory {
+    color: #8C8F90;
 }
-.styledLinkContent--drawer-see-more{
+
+.styledLinkContent--drawer-see-more {
     text-decoration: underline;
     font-weight: bold;
 }

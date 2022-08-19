@@ -65,64 +65,7 @@
         }
     },
     ///// -------------------------------------- acordion category 
-    "vtex.menu@2.x:submenu.accordion#department-accordion": {
-        "children": [
-            "vtex.menu@2.x:menu#department-accordion-itens"
-        ]
-    },
-    "vtex.menu@2.x:menu#department-accordion-itens": {
-        "props": {
-
-            "blockClass": ["full-width"],
-            "orientation": "vertical"
-                       
-        },
-        "children": [
-            "menu-item#category1-accordion",
-            "menu-item#category2-accordion",
-            "menu-item#category3-accordion",
-            "menu-item#see-more-accordion-category"
-        ]
-    },   
-    "menu-item#category1-accordion": {
-        "props": {           
-            "blockClass": ["drawer-category"],
-            "id": "menu-item-category1-accordion",
-            "itemProps": {
-                "tagTitle": "category1",
-                "text": "CATEGORIA 1"
-            }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu.accordion#category-accordion"
-        ]
-    },
-    "menu-item#category2-accordion": {
-        "props": {            
-            "blockClass": ["drawer-category"],
-            "id": "menu-item-category2-accordion",
-            "itemProps": {
-                "tagTitle": "category2",
-                "text": "CATEGORIA 2"
-            }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu.accordion#category-accordion"
-        ]
-    },
-    "menu-item#category3-accordion": {
-        "props": {
-            "blockClass": ["drawer-category"],
-            "id": "menu-item-category3-accordion",
-            "itemProps": {
-                "tagTitle": "category3",
-                "text": "CATEGORIA 3"
-            }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu.accordion#category-accordion"
-        ]
-    },    
+         
     "menu-item#see-more-accordion-category": {
         "props": {
             "blockClass": ["drawer-see-more","drawer-category"],
@@ -136,22 +79,7 @@
 
 
     ///// -------------------------------------- subcategory accordion ( can be props )
-    "vtex.menu@2.x:submenu.accordion#category-accordion": {
-        "children": [
-            "vtex.menu@2.x:menu#category-itens-accordion"
-        ]
-    },
-    "vtex.menu@2.x:menu#category-itens-accordion": {
-        "props": {
-            "orientation": "vertical"            
-        },
-        "children": [
-            "menu-item#subcategory1",
-            "menu-item#subcategory2",
-            "menu-item#subcategory3",
-            "menu-item#see-more-accordion"
-        ]
-    },
+    
     "menu-item#subcategory1": {
         "props": {           
             "blockClass": ["drawer-subcategory"],
