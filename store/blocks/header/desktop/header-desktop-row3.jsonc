@@ -33,12 +33,12 @@
     */
     "flex-layout.row#3-header-desktop": {
         "props": {
-            "blockClass": ["main-header","menu-header-desk"],
+            "blockClass": [
+                "menu-header-desk"
+            ],
             "horizontalAlign": "left",
             "verticalAlign": "center",
-            "preventHorizontalStretch": true,
-            "preventVerticalStretch": true,
-            "fullWidth": true
+            "preventHorizontalStretch": true
         },
         "children": [
             "menu-item#all-departments",
@@ -60,7 +60,7 @@
     },
     "menu-item#all-departments": {
         "props": {
-            "blockClass": [],
+            "blockClass": "header-menu-all-departments",
             "id": "menu-item-all-departments",
             "itemProps": {
                 "tagTitle": "all-departments",
@@ -72,6 +72,9 @@
         ]
     },
     "vtex.menu@2.x:submenu#all-departments": {
+        "props": {
+            "blockClass": "submenu-all-departments"
+        },
         "children": [
             "vtex.menu@2.x:menu#all-departments"
         ]
@@ -98,10 +101,10 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#header-department"
+            "vtex.menu@2.x:submenu#header-department1"
         ]
     },
-    // -------------------------------------- acordion department 2
+    // --------------------------------------  department 2
     "menu-item#header-department2": {
         "props": {
             "blockClass": [],
@@ -112,10 +115,10 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#header-department"
+            "vtex.menu@2.x:submenu#header-department2"
         ]
     },
-    // -------------------------------------- acordion department 3
+    // --------------------------------------  department 3
     "menu-item#header-department3": {
         "props": {
             "blockClass": [],
@@ -126,59 +129,50 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#header-department"
-        ]
-    },
-    // -------------------------------------- acordion category 1
-    "menu-item#header-category1": {
-        "props": {
-            "blockClass": [
-                "drawer-category"
-            ],
-            "id": "menu-item-category1",
-            "itemProps": {
-                "tagTitle": "category1",
-                "text": "CATEGORIA 1"
-            }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu#header-category"
-        ]
-    },
-    // -------------------------------------- acordion category 2
-    "menu-item#header-category2": {
-        "props": {
-            "blockClass": [
-                "drawer-category"
-            ],
-            "id": "menu-item-category2",
-            "itemProps": {
-                "tagTitle": "category2",
-                "text": "CATEGORIA 2"
-            }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu#header-category"
-        ]
-    },
-    // -------------------------------------- acordion category 3
-    "menu-item#header-category3": {
-        "props": {
-            "blockClass": [
-                "drawer-category"
-            ],
-            "id": "menu-item-category3",
-            "itemProps": {
-                "tagTitle": "category3",
-                "text": "CATEGORIA 3"
-            }
-        },
-        "blocks": [
-            "vtex.menu@2.x:submenu#header-category"
+            "vtex.menu@2.x:submenu#header-department3"
         ]
     },
     // -------------------------------------- department -> categories
-    "vtex.menu@2.x:submenu#header-department": {
+    "vtex.menu@2.x:submenu#header-department1": {
+        "props": {
+            "blockClass": [
+                "submenu-categories",
+                "submenu-category1"
+            ],
+            "orientation": "vertical"
+        },
+        "children": [
+            "rich-text#title-department1",
+            "vtex.menu@2.x:menu#header-department-itens"
+        ]
+    },
+    "rich-text#title-department1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**DEPARTAMENTO 1**"
+        }
+    },
+    "vtex.menu@2.x:submenu#header-department2": {
+        "props": {
+            "blockClass": [
+                "submenu-categories",
+                "submenu-category2"
+            ],
+            "orientation": "vertical"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#header-department-itens"
+        ]
+    },
+    "vtex.menu@2.x:submenu#header-department3": {
+        "props": {
+            "blockClass": [
+                "submenu-categories",
+                "submenu-category3"
+            ],
+            "orientation": "vertical"
+        },
         "children": [
             "vtex.menu@2.x:menu#header-department-itens"
         ]
@@ -190,12 +184,56 @@
         },
         "children": [
             "menu-item#header-category1",
-            "menu-item#header-category2",
-            "menu-item#header-category3"
+            "menu-item#header-category2"
+        ]
+    },
+    // --------------------------------------  category 1
+    "menu-item#header-category1": {
+        "props": {
+            "blockClass": "drawer-category",
+            "id": "menu-item-category1",
+            "itemProps": {
+                "tagTitle": "category1",
+                "text": "CATEGORIA 1"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#header-category"
+        ]
+    },
+    // --------------------------------------  category 2
+    "menu-item#header-category2": {
+        "props": {
+            "blockClass": "drawer-category",
+            "id": "menu-item-category2",
+            "itemProps": {
+                "tagTitle": "category2",
+                "text": "CATEGORIA 2"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#header-category"
+        ]
+    },
+    // --------------------------------------  category 3
+    "menu-item#header-category3": {
+        "props": {
+            "blockClass": "drawer-category",
+            "id": "menu-item-category3",
+            "itemProps": {
+                "tagTitle": "category3",
+                "text": "CATEGORIA 3"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu#header-category"
         ]
     },
     // --------------------------------------  categories -> sub categories
     "vtex.menu@2.x:submenu#header-category": {
+        "props": {
+            "blockClass": "submenu-subcategories"
+        },
         "children": [
             "vtex.menu@2.x:menu#header-category-itens"
         ]

@@ -36,15 +36,18 @@
     }
   } */
 @media screen and (max-width: 1000px) {
+
     .styledLinkContent--my-account,
     .styledLinkContent--drawer-partner {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
     .menuItem--drawer-margin {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+
     .menuItem--drawer-margin--isClosed {
         border: solid;
         border-color: #EEEEEE;
@@ -52,11 +55,112 @@
     }
 }
 
-@media screen and (min-width: 1000px)  {
-    .menuContainerNav--main-menu-header-desktop .styledLinkContainer{
+@media screen and (min-width: 1000px) {
+    .menuContainerNav--main-menu-header-desktop .styledLinkContainer {
         padding: 0;
     }
-    
+
+}
+
+.menuItem--header-menu-all-departments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #441AFA;
+    width: 300px;
+}
+
+.styledLinkContent--header-menu-all-departments {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    position: relative;
+}
+
+.styledLinkContent--header-menu-all-departments::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    width: 20px;
+    height: 14px;
+    background-image: url("assets/icons/hamburguer-branco.png");
+}
+
+.submenuWrapper--submenu-all-departments {
+    position: absolute;
+    left: -256px;
+    top: 20px;
+    height: 366px;
+    width: 300px;
+    border-right: solid;
+    border-width: 1px;
+    border-color: #EEEEEE;
+}
+
+.submenu--submenu-all-departments {
+    justify-content: flex-start;
+}
+
+.submenuWrapper--submenu-categories {
+    height: 366px;
+    width: 300px;
+    border-right: solid;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    position: absolute;
+    left: 300px;
+}
+
+.submenu--submenu-categories {
+    justify-content: flex-start;
+}
+
+.submenuWrapper--submenu-category1 {
+    top: -34px;
+}
+
+.submenuWrapper--submenu-category2 {
+    top: -56px;
+}
+
+.submenuWrapper--submenu-category3 {
+    top: -77px;
+} 
+
+.submenuWrapper--submenu-subcategories {
+    height: 366px;
+    width: 300px;
+    border-right: solid;
+    border-width: 1px;
+    border-color: #EEEEEE;
+    position: absolute;
+    left: 300px;
+    top: -47px;
+}
+
+
+
+.submenuWrapper--submenu-categories2 {
+    position: absolute;
+    left: 300px;
+    top: -34px;
+}
+
+.submenu--submenu-categories2 {
+    justify-content: flex-start;
+}
+
+
+
+.menuContainerNav--main-menu-header-desktop {
+    display: flex;
+    align-items: center;
+}
+
+.menuContainerNav--main-menu-header-desktop .styledLinkContainer {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .styledLinkContent--my-account {

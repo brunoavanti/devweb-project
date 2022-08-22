@@ -52,6 +52,9 @@
   border: solid;
   border-width: 1px;
   border-color: #A2A2A240;
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
 }
 
 .flexRowContent--menu-header-desk {
