@@ -93,11 +93,14 @@
     //--------------reeuse--------------------------------------------------------------------------------------------------
     "menu-item#header-department1": {
         "props": {
-            "blockClass": [],
+            "blockClass": [
+                "header-item-submenu",
+                "header-item-department"
+            ],
             "id": "menu-item-department1",
             "itemProps": {
                 "tagTitle": "department1",
-                "text": "DEPARTAMENTO 1"
+                "text": "Departamento 1"
             }
         },
         "blocks": [
@@ -107,11 +110,14 @@
     // --------------------------------------  department 2
     "menu-item#header-department2": {
         "props": {
-            "blockClass": [],
+            "blockClass": [
+                "header-item-submenu",
+                "header-item-department"
+            ],
             "id": "menu-item-department2",
             "itemProps": {
                 "tagTitle": "department2",
-                "text": "DEPARTAMENTO 2"
+                "text": "Departamento 2"
             }
         },
         "blocks": [
@@ -121,11 +127,14 @@
     // --------------------------------------  department 3
     "menu-item#header-department3": {
         "props": {
-            "blockClass": [],
+            "blockClass": [
+                "header-item-submenu",
+                "header-item-department"
+            ],
             "id": "menu-item-department3",
             "itemProps": {
                 "tagTitle": "department3",
-                "text": "DEPARTAMENTO 3"
+                "text": "Departamento 3"
             }
         },
         "blocks": [
@@ -150,7 +159,8 @@
         "props": {
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
-            "text": "**DEPARTAMENTO 1**"
+            "text": "**Departamento 1**",
+            "blockClass": "header-submenu-title"
         }
     },
     "vtex.menu@2.x:submenu#header-department2": {
@@ -162,8 +172,17 @@
             "orientation": "vertical"
         },
         "children": [
+            "rich-text#title-department2",
             "vtex.menu@2.x:menu#header-department-itens"
         ]
+    },
+    "rich-text#title-department2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Departamento 2**",
+            "blockClass": "header-submenu-title"
+        }
     },
     "vtex.menu@2.x:submenu#header-department3": {
         "props": {
@@ -174,8 +193,17 @@
             "orientation": "vertical"
         },
         "children": [
+            "rich-text#title-department3",
             "vtex.menu@2.x:menu#header-department-itens"
         ]
+    },
+    "rich-text#title-department3": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Departamento 3**",
+            "blockClass": "header-submenu-title"
+        }
     },
     "vtex.menu@2.x:menu#header-department-itens": {
         "props": {
@@ -184,13 +212,18 @@
         },
         "children": [
             "menu-item#header-category1",
-            "menu-item#header-category2"
+            "menu-item#header-category2",
+            "menu-item#header-category3",
+            "menu-item#see-more-accordion-category"
         ]
     },
     // --------------------------------------  category 1
     "menu-item#header-category1": {
         "props": {
-            "blockClass": "drawer-category",
+            "blockClass": [
+                "header-item-submenu",
+                "header-item-category"
+            ],
             "id": "menu-item-category1",
             "itemProps": {
                 "tagTitle": "category1",
@@ -198,13 +231,16 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#header-category"
+            "vtex.menu@2.x:submenu#header-category1"
         ]
     },
     // --------------------------------------  category 2
     "menu-item#header-category2": {
         "props": {
-            "blockClass": "drawer-category",
+            "blockClass": [
+                "header-item-submenu",
+                "header-item-category"
+            ],
             "id": "menu-item-category2",
             "itemProps": {
                 "tagTitle": "category2",
@@ -212,13 +248,16 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#header-category"
+            "vtex.menu@2.x:submenu#header-category2"
         ]
     },
     // --------------------------------------  category 3
     "menu-item#header-category3": {
         "props": {
-            "blockClass": "drawer-category",
+            "blockClass": [
+                "header-item-submenu",
+                "header-item-category"
+            ],
             "id": "menu-item-category3",
             "itemProps": {
                 "tagTitle": "category3",
@@ -226,17 +265,63 @@
             }
         },
         "blocks": [
-            "vtex.menu@2.x:submenu#header-category"
+            "vtex.menu@2.x:submenu#header-category3"
         ]
     },
     // --------------------------------------  categories -> sub categories
-    "vtex.menu@2.x:submenu#header-category": {
+    "vtex.menu@2.x:submenu#header-category1": {
         "props": {
-            "blockClass": "submenu-subcategories"
+            "blockClass": ["submenu-subcategories","submenu-subcategory1"],
+            "orientation": "vertical"
         },
         "children": [
+            "rich-text#title-category1",
             "vtex.menu@2.x:menu#header-category-itens"
         ]
+    },
+    "rich-text#title-category1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Categoria 1**",
+            "blockClass": "header-submenu-title"
+        }
+    },
+    "vtex.menu@2.x:submenu#header-category2": {
+        "props": {
+            "blockClass": ["submenu-subcategories","submenu-subcategory2"],
+            "orientation": "vertical"
+        },
+        "children": [
+            "rich-text#title-category2",
+            "vtex.menu@2.x:menu#header-category-itens"
+        ]
+    },
+    "rich-text#title-category2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Categoria 2**",
+            "blockClass": "header-submenu-title"
+        }
+    },
+    "vtex.menu@2.x:submenu#header-category3": {
+        "props": {
+            "blockClass": ["submenu-subcategories","submenu-subcategory3"],
+            "orientation": "vertical"
+        },
+        "children": [
+            "rich-text#title-category3",
+            "vtex.menu@2.x:menu#header-category-itens"
+        ]
+    },
+    "rich-text#title-category3": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Categoria 3**",
+            "blockClass": "header-submenu-title"
+        }
     },
     "vtex.menu@2.x:menu#header-category-itens": {
         "props": {
@@ -245,7 +330,8 @@
         "children": [
             "menu-item#subcategory1",
             "menu-item#subcategory2",
-            "menu-item#subcategory3"
+            "menu-item#subcategory3",
+            "menu-item#see-more-accordion-category"
         ]
     }
 }
