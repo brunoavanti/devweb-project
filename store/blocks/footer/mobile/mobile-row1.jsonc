@@ -22,7 +22,6 @@
 	},
 	"flex-layout.row#newsletter-logo": {
 		"props": {
-			"blockClass": "newsletter-row",
 			"horizontalAlign": "center"
 		},
 		"children": [

@@ -82,6 +82,14 @@
   font-size: 14px;
 }
 
+.flexRow--newsletter-row{
+  background-image: url("assets/logos/logo-transparente.png");
+  background-repeat: no-repeat;
+  background-size: 308px 348px;
+  background-position: calc(50vw - 308px - 56px - 1rem) 12px;
+  pointer-events: none;
+}
+
 .flexCol--newsletter-col .flexColchild {
   width: 100%;
   margin-right: 1.5rem;

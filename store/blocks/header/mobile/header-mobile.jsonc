@@ -16,13 +16,6 @@
         }
     },
     "flex-layout.row#2-mobile": {
-        "children": [
-            "drawer",
-            "logo#mobile",
-            //"flex-layout.col#spacer",
-            //"login",
-            "minicart.v2"
-        ],
         "props": {
             "blockClass": [
                 "main-header-mobile",
@@ -31,7 +24,13 @@
             "preventHorizontalStretch": true,
             "preserveLayoutOnMobile": true,
             "fullWidth": true
-        }
+        },
+        "children": [
+            "drawer",
+            "logo#mobile",
+            "minicart.v2"
+        ]
+        
     },
     "drawer": {
         "children": [

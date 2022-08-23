@@ -1,36 +1,4 @@
 {
-    /* 
-    ------------------mobile------------------
-    drawer geral
-    menu item itens "departamento" 1
-        submenu acordion acordion 1 nivel
-        menu 2x
-        menu item itens "categoria 1"
-            submenu acordion sub accordion segundo nivel
-            menu2x
-            menuitem subcategoria 1
-
-    ------------------desktop------------------
-
-    menu2x geral
-    menu item todos os departamentos 
-        submenu
-        menu 2x 
-        menu item departamentos1, 2 ,3
-            submenu
-            menu 2x
-            menu item categorias 1, 2
-                submenu
-                sub menu2x
-                menu item sub-categorias
-    --------
-    menu item dep1 e depar 2
-        sub menu 
-        menu 2x
-        cat 1 cat 2
-    --------
-    menu item/rich text novidades outlet
-    */
     "flex-layout.row#3-header-desktop": {
         "props": {
             "blockClass": [

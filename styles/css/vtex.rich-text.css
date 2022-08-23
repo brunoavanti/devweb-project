@@ -54,7 +54,7 @@
   justify-content: center;
 }
 
-.paragraph--header-submenu-title{
+.paragraph--header-submenu-title {
   color: #441AFA;
   font-size: 16px;
   line-height: 22px;
@@ -79,6 +79,23 @@
   letter-spacing: 2px;
   margin-bottom: 0;
 }
+
+@media screen and (min-width: 1000px) {
+  .container--newsletter-title {
+    position: relative;
+  }
+  .wrapper--newsletter-title::before {
+    content: "";
+    position: absolute;
+    width: 308px;
+    height: 348px;
+    background-image: url(assets/logos/logo-transparente.png);
+    pointer-events: none;
+    right: 481px;
+    top: 19px;
+  }
+}
+
 
 .paragraph--newsletter-description {
   font-size: 16px;
