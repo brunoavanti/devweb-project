@@ -13,27 +13,36 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "flex-layout.row#1-header-desktop",
+      "sticky-layout#2-header-desktop"
     ]
   },
-  "flex-layout.row#1-desktop": {
-    "children": [
-      "telemarketing"
-    ],
+  "sticky-layout#2-header-desktop": {
     "props": {
-      "fullWidth": true
-    }
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
+      "blockClass": "sticky-header"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-menu"
+      "flex-layout.row#stiker-header-desktop"
     ]
   },
+  "flex-layout.row#stiker-header-desktop": {
+    "props":{
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#stiker-header-desktop"
+    ]
+  },
+  "flex-layout.col#stiker-header-desktop": {
+    "props":{
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#2-header-desktop",
+      "flex-layout.row#3-header-desktop"
+    ]
+  },
+  //------------------------------------------desktop
   "header-layout.mobile": {
     "children": [
       "sticky-layout#1-mobile"
@@ -41,46 +50,9 @@
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#1-mobile"
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile",
+      "flex-layout.row#3-mobile"
     ]
-  },
-  "flex-layout.row#1-mobile": {
-    "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
-  },
-  "drawer": {
-    "children": [
-      "menu#drawer"
-    ]
-  },
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
-    }
   }
 }

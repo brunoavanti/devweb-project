@@ -1,0 +1,53 @@
+{
+    "flex-layout.row#1-mobile": {
+        "props": {
+            "blockClass": "top-bar",
+            "fullWidth": true,
+            "verticalAling": "center"
+        },
+        "children": [
+            "rich-text#free-shiping-test"
+        ]
+    },
+    "rich-text#free-shiping-test": {
+        "props": {
+            "blockClass": "shiping-topbar",
+            "text": "Frete Gratis acima de R$299,00 para Região Sudeste."
+        }
+    },
+    "flex-layout.row#2-mobile": {
+        "children": [
+            "drawer",
+            "logo#mobile",
+            //"flex-layout.col#spacer",
+            //"login",
+            "minicart.v2"
+        ],
+        "props": {
+            "blockClass": [
+                "main-header-mobile",
+                "space-between"
+            ],
+            "preventHorizontalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "drawer": {
+        "children": [
+            "menu#drawer"
+        ]
+    },     
+    "flex-layout.row#3-mobile": {
+        "props": {
+            "blockClass": [
+                "main-header-mobile"
+            ],
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        },
+        "children": [
+            "search-bar"
+        ]
+    } 
+}

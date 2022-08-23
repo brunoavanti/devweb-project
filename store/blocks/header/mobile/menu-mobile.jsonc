@@ -1,0 +1,156 @@
+{
+    "menu#drawer": {
+        "children": [
+            "menu-item#news",
+            "menu-item#outlet",
+            "menu-item#department1-accordion",
+            "menu-item#department2-accordion",
+            "menu-item#department3-accordion",
+            "menu-item#department4",
+            "menu-item#my-account",
+            "menu-item#partner-stores"
+        ],
+        "props": {
+            "blockClass": [
+                "full-width"
+            ],
+            "orientation": "vertical"
+        }
+    },
+    // -------------------------------------- acordion department 1
+    "menu-item#department1-accordion": {
+        "props": {
+            "blockClass": [
+                "drawer-margin",
+                "dynamic-title"
+            ],
+            "id": "menu-item-department1-accordion",
+            "itemProps": {
+                "tagTitle": "department1",
+                "text": "DEPARTAMENTO 1"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#department-accordion"
+        ]
+    },
+    // -------------------------------------- acordion department 2
+    "menu-item#department2-accordion": {
+        "props": {
+            "blockClass": [
+                "drawer-margin",
+                "dynamic-title"
+            ],
+            "id": "menu-item-department2-accordion",
+            "itemProps": {
+                "tagTitle": "department2",
+                "text": "DEPARTAMENTO 2"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#department-accordion"
+        ]
+    },
+    // -------------------------------------- acordion department 3
+    "menu-item#department3-accordion": {
+        "props": {
+            "blockClass": [
+                "drawer-margin",
+                "dynamic-title"
+            ],
+            "id": "menu-item-department3-accordion",
+            "itemProps": {
+                "tagTitle": "department3",
+                "text": "DEPARTAMENTO 3"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#department-accordion"
+        ]
+    },
+    // -------------------------------------- acordion category 1
+    "menu-item#category1-accordion": {
+        "props": {
+            "blockClass": [
+                "drawer-category"
+            ],
+            "id": "menu-item-category1-accordion",
+            "itemProps": {
+                "tagTitle": "category1",
+                "text": "CATEGORIA 1"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#category-accordion"
+        ]
+    },
+    // -------------------------------------- acordion category 2
+    "menu-item#category2-accordion": {
+        "props": {
+            "blockClass": [
+                "drawer-category"
+            ],
+            "id": "menu-item-category2-accordion",
+            "itemProps": {
+                "tagTitle": "category2",
+                "text": "CATEGORIA 2"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#category-accordion"
+        ]
+    },
+    // -------------------------------------- acordion category 3
+    "menu-item#category3-accordion": {
+        "props": {
+            "blockClass": [
+                "drawer-category"
+            ],
+            "id": "menu-item-category3-accordion",
+            "itemProps": {
+                "tagTitle": "category3",
+                "text": "CATEGORIA 3"
+            }
+        },
+        "blocks": [
+            "vtex.menu@2.x:submenu.accordion#category-accordion"
+        ]
+    },
+    // -------------------------------------- acordion categories
+    "vtex.menu@2.x:submenu.accordion#department-accordion": {
+        "children": [
+            "vtex.menu@2.x:menu#department-accordion-itens"
+        ]
+    },
+    "vtex.menu@2.x:menu#department-accordion-itens": {
+        "props": {
+            "blockClass": [
+                "full-width"
+            ],
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#category1-accordion",
+            "menu-item#category2-accordion",
+            "menu-item#category3-accordion",
+            "menu-item#see-more-accordion-category"
+        ]
+    },
+    // -------------------------------------- acordion sub categories
+    "vtex.menu@2.x:submenu.accordion#category-accordion": {
+        "children": [
+            "vtex.menu@2.x:menu#category-itens-accordion"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-itens-accordion": {
+        "props": {
+            "orientation": "vertical"
+        },
+        "children": [
+            "menu-item#subcategory1",
+            "menu-item#subcategory2",
+            "menu-item#subcategory3",
+            "menu-item#see-more-accordion"
+        ]
+    }
+}

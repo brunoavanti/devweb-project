@@ -1,0 +1,124 @@
+{
+    //------------------------------------------------mobile ------------------------
+    "logo#mobile": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "assets/logos/avanti2x.png",
+            "width": "176",
+            "height": "30"
+        }
+    },
+    //------------------------------------------------desktop ------------------------
+
+
+    ///// -------------------------------------- menu item drawers
+    
+    "menu-item#news": {
+        "props": {
+            "blockClass": ["black-bold","drawer-margin"],
+            "id": "menu-item-news",
+            "itemProps": {
+                "tagTitle": "novidades",
+                "text": "NOVIDADES"
+            }
+        }
+    },
+    "menu-item#outlet": {
+        "props": {
+            "blockClass": ["blue-bold","drawer-margin"],
+            "id": "menu-item-outlet",
+            "itemProps": {
+                "tagTitle": "outlet",
+                "text": "OUTLET"
+            }
+        }
+    },
+    "menu-item#department4": {
+        "props": {
+            "blockClass": ["drawer-margin"],
+            "id": "menu-item-department4",
+            "itemProps": {
+                "tagTitle": "department4",
+                "text": "DEPARTAMENTO 4"
+            }
+        }
+    },
+    "menu-item#my-account": {
+        "props": {
+            "blockClass": ["my-account"],
+            "id": "menu-item-my-account",
+            "itemProps": {
+                "tagTitle": "my-account",
+                "text": "MINHA CONTA"
+            }
+        }
+    },
+    "menu-item#partner-stores": {
+        "props": {
+            "blockClass": ["drawer-partner"],
+            "id": "menu-item-partner-stores",
+            "itemProps": {
+                "tagTitle": "partner-stores",
+                "text": "LOJAS PARCEIRAS"
+            }
+        }
+    },
+    ///// -------------------------------------- acordion category 
+         
+    "menu-item#see-more-accordion-category": {
+        "props": {
+            "blockClass": ["drawer-see-more","drawer-category"],
+            "id": "menu-item-see-more-category",
+            "itemProps": {
+                "tagTitle": "see-more-category",
+                "text": "Ver Todos"
+            }
+        }
+    },
+
+
+    ///// -------------------------------------- subcategory accordion ( can be props )
+    
+    "menu-item#subcategory1": {
+        "props": {           
+            "blockClass": ["drawer-subcategory"],
+            "id": "menu-item-subcategory1",
+            "itemProps": {
+                "tagTitle": "subcategory1",
+                "text": "Subcategoria 1"
+            }
+        }
+    },
+    "menu-item#subcategory2": {
+        "props": {           
+            "blockClass": ["drawer-subcategory"],
+            "id": "menu-item-subcategory2",
+            "itemProps": {
+                "tagTitle": "subcategory2",
+                "text": "Subcategoria 2"
+            }
+        }
+    },
+    "menu-item#subcategory3": {
+        "props": {           
+            "blockClass": ["drawer-subcategory"],
+            "id": "menu-item-subcategory3",
+            "itemProps": {
+                "tagTitle": "subcategory3",
+                "text": "Subcategoria 3"
+            }
+        }
+    },
+    "menu-item#see-more-accordion": {
+        "props": {           
+            "blockClass": ["drawer-see-more","drawer-subcategory"],
+            "id": "menu-item-see-more-accordion",
+            "itemProps": {
+                "tagTitle": "see-more3",
+                "text": "Ver todos"
+            }
+        }
+    }
+
+}
