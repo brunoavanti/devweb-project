@@ -14,6 +14,7 @@
 }
 .container{
   max-width: 1252px;
+  padding: 0px;
 }
 
 .label {

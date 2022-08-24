@@ -1,0 +1,231 @@
+{
+    "flex-layout.row#home-departments": {
+        "props": {
+            "blockClass": "home-department-row"
+        },
+        "children": [
+            "flex-layout.col#home-departments"
+        ]
+    },
+    "flex-layout.col#home-departments": {
+        "children": [
+            "rich-text#home-department-title",
+            "slider-layout#home-departments"
+        ]
+    },
+    "rich-text#home-department-title": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**TODOS OS DEPARTAMENTOS**",
+            "blockClass": "home-department-title"
+        }
+    },
+    "slider-layout#home-departments": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 8,
+                "tablet": 3,
+                "phone": 3
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showPaginationDots": "never",
+            "blockClass": "carousel-departments"
+        },
+        "children": [
+            "flex-layout.col#slider-department-1",
+            "flex-layout.col#slider-department-2",
+            "flex-layout.col#slider-department-3",
+            "flex-layout.col#slider-department-4",
+            "flex-layout.col#slider-department-5",
+            "flex-layout.col#slider-department-6",
+            "flex-layout.col#slider-department-7",
+            "flex-layout.col#slider-department-8",
+            "flex-layout.col#slider-department-1",
+            "flex-layout.col#slider-department-2",
+            "flex-layout.col#slider-department-3",
+            "flex-layout.col#slider-department-4",
+            "flex-layout.col#slider-department-5",
+            "flex-layout.col#slider-department-6",
+            "flex-layout.col#slider-department-7",
+            "flex-layout.col#slider-department-8"
+        ]
+    },
+    // ----- department 1
+    "flex-layout.col#slider-department-1": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-1",
+            "rich-text#department-1"
+        ]
+    },
+    "image#department-1": {
+        "props": {
+            "src": "assets/products/clothes.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-1": {
+        "props": {
+            "text": "**DEPARTAMENTO 1**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 2
+    "flex-layout.col#slider-department-2": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-2",
+            "rich-text#department-2"
+        ]
+    },
+    "image#department-2": {
+        "props": {
+            "src": "assets/products/electronics.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-2": {
+        "props": {
+            "text": "**DEPARTAMENTO 2**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 3
+    "flex-layout.col#slider-department-3": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-3",
+            "rich-text#department-3"
+        ]
+    },
+    "image#department-3": {
+        "props": {
+            "src": "assets/products/games.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-3": {
+        "props": {
+            "text": "**DEPARTAMENTO 3**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 4
+    "flex-layout.col#slider-department-4": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-4",
+            "rich-text#department-4"
+        ]
+    },
+    "image#department-4": {
+        "props": {
+            "src": "assets/products/glasses.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-4": {
+        "props": {
+            "text": "**DEPARTAMENTO 4**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 5
+    "flex-layout.col#slider-department-5": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-5",
+            "rich-text#department-5"
+        ]
+    },
+    "image#department-5": {
+        "props": {
+            "src": "assets/products/hoodies.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-5": {
+        "props": {
+            "text": "**DEPARTAMENTO 5**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 6
+    "flex-layout.col#slider-department-6": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-6",
+            "rich-text#department-6"
+        ]
+    },
+    "image#department-6": {
+        "props": {
+            "src": "assets/products/smartwatch.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-6": {
+        "props": {
+            "text": "**DEPARTAMENTO 6**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 7
+    "flex-layout.col#slider-department-7": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-7",
+            "rich-text#department-7"
+        ]
+    },
+    "image#department-7": {
+        "props": {
+            "src": "assets/products/jackets.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-7": {
+        "props": {
+            "text": "**DEPARTAMENTO 7**",
+            "blockClass": "departments-slider"
+        }
+    },
+    // ----- department 8
+    "flex-layout.col#slider-department-8": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#department-8",
+            "rich-text#department-8"
+        ]
+    },
+    "image#department-8": {
+        "props": {
+            "src": "assets/products/masks.png",
+            "maxHeight": "80px"
+        }
+    },
+    "rich-text#department-8": {
+        "props": {
+            "text": "**DEPARTAMENTO 8**",
+            "blockClass": "departments-slider"
+        }
+    }
+}
