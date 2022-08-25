@@ -77,12 +77,14 @@
   },
   "image#banner-newin": {
     "props": {
+      "blockClass":"banner-newin",
       "src": "assets/banners/banner-newin.png",
       "maxHeight": "569px"
     }
   },
   "image#banner-sale": {
     "props": {
+      "blockClass":"banner-sale",
       "src": "assets/banners/banner-sale.png",
       "maxHeight": "569px"
     }
