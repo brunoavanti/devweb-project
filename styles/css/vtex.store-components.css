@@ -12,21 +12,120 @@
   background-color: #e6f1e6;
   padding: 0px;
 }
-.container{
+
+.container {
   max-width: 1252px;
   padding: 0px;
 }
-.logoContainer{
+
+@media screen and (max-width: 1000px) {
+  .infoCardContainer--info-card-home-people {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .infoCardTextContainer--info-card-home-people{
+    margin: 0 20px;
+  }
+}
+
+
+.infoCardContainer--info-card-home-people {
+  margin-top: 45px;
+  background-color: #EEEEEE;
+}
+
+.infoCardHeadline--info-card-home-people {
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 9.6px;
+  color: #441AFA;
+}
+
+.infoCardSubhead--info-card-home-people {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  max-width: 474px;
+}
+
+@media screen and (min-width: 1000px) {
+
+  /* desktop */
+  .infoCardHeadline--info-card-home-people {
+    font-size: 2.5rem;
+    line-height: 55px;
+    letter-spacing: 0.825rem;
+    color: #441AFA;
+  }
+
+  .infoCardSubhead--info-card-home-people {
+    font-size: 0.75rem;
+    line-height: 17px;
+    color: #B1B3B3;
+  }
+
+  .infoCardContainer--info-card-home-people {
+    margin-top: 80px;
+  }
+}
+
+.infoCardCallActionContainer--info-card-home-people :global(.vtex-button) {
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .imageElement--banner-newin {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .imageElement--banner-newin {
+    width: 616px;
+    height: 569px;
+    margin-right: 10px;
+  }
+
+  .imageElement--banner-sale {
+    width: 616px;
+    height: 569px;
+    margin-left: 10px;
+  }
+}
+
+
+.logoContainer {
   padding: 0;
 }
-.searchBarIcon{
+
+.searchBarIcon {
   color: white;
 }
-.searchBarInnerContainer :global(.vtex-input__suffix){
+
+.searchBarInnerContainer :global(.vtex-input__suffix) {
   background-color: #441AFA;
   border-radius: 0px;
 }
-.searchBarContainer{
+
+.searchBarContainer {
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -68,6 +167,7 @@
   max-height: 300px;
   margin-bottom: 20px;
 }
+
 .imageElement--logo-footer {
   padding-right: 1rem;
   border-right: solid;

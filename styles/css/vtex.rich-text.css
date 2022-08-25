@@ -111,16 +111,12 @@
   line-height: 15px;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
 .paragraph--right-border {
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: #B1B3B3;
 }
 
-=======
 .paragraph--home-department-title{
   font-size: 16px;
   line-height: 22px;
@@ -129,13 +125,6 @@
   margin-bottom: 20px;
 }
 
-
-
-
-
-
->>>>>>> Stashed changes
->>>>>>> home
 .container--link {
   justify-content: center;
 }

@@ -152,16 +152,21 @@
 }
 
 .flexRowContent--home-department-row {
-  margin-top: 40px ;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+.flexRow--home-element-margin{
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 1000px) {  
   .flexRowContent--home-department-row {
-    margin-top: 20px;
+    margin-top: 40px ;
+  }
+  .flexRow--home-element-margin{
+    margin-top: 80px;
   }
 }
-
-
 
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;

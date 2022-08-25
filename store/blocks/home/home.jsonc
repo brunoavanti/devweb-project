@@ -19,6 +19,7 @@
       "flex-layout.row#home-banner",
       "slider-layout#deals-images",
       "flex-layout.row#home-departments",
+      "info-card#home-people",
       "flex-layout.row#shop-now"
     ]
   },
@@ -27,6 +28,7 @@
       "flex-layout.row#home-banner",
       "flex-layout.row#deals",
       "flex-layout.row#home-departments",
+      "info-card#home-people",
       "flex-layout.row#shop-now"
     ]
   },
@@ -70,6 +72,9 @@
     }
   },
   "flex-layout.row#shop-now": {
+    "props":{
+      "blockClass": "home-element-margin"
+    },
     "children": [
       "image#banner-newin",
       "image#banner-sale"
@@ -88,5 +93,40 @@
       "src": "assets/banners/banner-sale.png",
       "maxHeight": "569px"
     }
+  },
+  "info-card#home-people": {
+    "props": {
+      "id": "info-card-home-people",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/banners/people-desktop.png",
+      "mobileImageUrl" : "assets/banners/people-mobile.png",
+      "headline": "LOREM IPSUM",
+      "subhead": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",
+      "callToActionText": "LOREM IPSUM ->",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-home-people",
+      "textAlignment": "left"
+    }
+  },
+  "flex-layout.row#people-banner": {
+    "props":{
+      "blockClass": "home-element-margin"
+    },
+    "children": [
+      //"image#banner-people",
+      "flex-layout.col#people-text"
+    ]
+  },
+  "flex-layout.col#people-text": {
+    "props":{
+    },
+    "children": [
+      //"rich-text#people-title",
+      //"rich-text#people-description"
+
+
+    ]
   }
+
 }
