@@ -82,7 +82,13 @@
   font-size: 14px;
 }
 
+<<<<<<< HEAD
 .flexRow--newsletter-row{
+=======
+<<<<<<< Updated upstream
+=======
+.flexRow--newsletter-row {
+>>>>>>> home
   background-image: url("assets/logos/logo-transparente.png");
   background-repeat: no-repeat;
   background-size: 308px 348px;
@@ -90,6 +96,10 @@
   pointer-events: none;
 }
 
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> home
 .flexCol--newsletter-col .flexColchild {
   width: 100%;
   margin-right: 1.5rem;
@@ -139,16 +149,35 @@
   border-right: 1px
 }
 
-.flexRow--deals {
-  background-color: #0F3E99;
-  padding: 14px 0px;
+.flexRowContent--deals {
+  background-color: #EEEEEE;
+  margin: 10px 0px;
+  height: 4rem;
 }
+
+.flexRowContent--carousel-deals {
+  align-items: center;
+}
+
+.flexRowContent--home-department-row {
+  margin-top: 40px ;
+}
+
+@media screen and (max-width: 1000px) {
+  .flexRowContent--home-department-row {
+    margin-top: 20px;
+  }
+}
+
+
 
 .flexRow--deals .stretchChildrenWidth {
   align-items: center;
 }
 
-.flexRow--deals .flexCol {
+.flexRow--deals .flexColChild {
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 5px;
   padding-top: 5px;

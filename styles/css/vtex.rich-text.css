@@ -1,11 +1,15 @@
 .container--deals {
-  color: #ffffff;
   text-align: center;
   justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
 }
 
-.container--deals .paragraph {
-  margin: 0;
+@media screen and (min-width: 1000px) {
+  .container--deals .paragraph {
+    width:max-content;
+    margin: 0;
+  }
 }
 
 .container--shelfTitle {
@@ -107,6 +111,31 @@
   line-height: 15px;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+.paragraph--right-border {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #B1B3B3;
+}
+
+=======
+.paragraph--home-department-title{
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1.6px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+>>>>>>> Stashed changes
+>>>>>>> home
 .container--link {
   justify-content: center;
 }
