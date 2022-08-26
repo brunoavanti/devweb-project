@@ -12,7 +12,7 @@
         ],
         "props": {
             "blockClass": [
-                "full-width"
+                "full-width","drawer-menu-general"
             ],
             "orientation": "vertical"
         }

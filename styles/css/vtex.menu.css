@@ -6,8 +6,14 @@
 }
 
 .accordionIcon--isOpen {
-    transform: scaleY(-1);
+    transform: scaleY(-1);   
 }
+
+.menuItem--header-menu-all-departments .accordionIcon--isOpen{
+    background-image: url("assets/icons/blueArrow.svg"); 
+}
+
+
 
 .menuContainerNav--full-width {
     width: 100%;
@@ -189,7 +195,17 @@
 .menuItem--header-item-category--isOpen 
 .styledLinkContainer--header-item-category::after {
     transform: rotate(90deg);
+    background-image: url("assets/icons/blueArrow.svg"); 
 }
+.submenu--submenu-all-departments 
+.menuItem--header-item-department--isOpen 
+.styledLinkContent--header-item-department,
+.menuItem--header-item-category--isOpen 
+.styledLinkContent--header-item-category {
+    color: #441AFA;
+    font-weight: bold;
+}
+
 
 .styledLinkContent--my-account {
     color: #441AFA;
