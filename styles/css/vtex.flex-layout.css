@@ -180,6 +180,10 @@
   padding-top: 5px;
 }
 
+.flexRow--product-banners-row2 {
+  margin-top: 20px;
+}
+
 .flexCol--filterCol {
   max-width: 500px;
   min-width: 230px;

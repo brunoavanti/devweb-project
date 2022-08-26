@@ -7,20 +7,14 @@
   },
   "responsive-layout.phone#home": {
     "children": [
-      /* You can make references to blocks defined in other files.
-         For example, `flex-layout.row#deals` is defined in the `deals.json` file. 
-      "flex-layout.row#deals",
-      "__fold__",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link" */
       "flex-layout.row#home-banner",
       "slider-layout#deals-images",
       "flex-layout.row#home-departments",
       "info-card#home-people",
-      "flex-layout.row#shop-now"
+      "flex-layout.row#shop-now",
+      "flex-layout.row#product-banners-mobile",
+      // "list-context.product-list#shelf-home"
+      "list-context.product-list#shelf-home"
     ]
   },
   "responsive-layout.desktop#home": {
@@ -29,7 +23,10 @@
       "flex-layout.row#deals",
       "flex-layout.row#home-departments",
       "info-card#home-people",
-      "flex-layout.row#shop-now"
+      "flex-layout.row#shop-now",
+      "flex-layout.row#product-banners-desktop",
+      // "list-context.product-list#shelf-home"
+      "list-context.product-list#shelf-home"
     ]
   },
   "flex-layout.row#home-banner": {
@@ -72,7 +69,7 @@
     }
   },
   "flex-layout.row#shop-now": {
-    "props":{
+    "props": {
       "blockClass": "home-element-margin"
     },
     "children": [
@@ -82,14 +79,14 @@
   },
   "image#banner-newin": {
     "props": {
-      "blockClass":"banner-newin",
+      "blockClass": "banner-newin",
       "src": "assets/banners/banner-newin.png",
       "maxHeight": "569px"
     }
   },
   "image#banner-sale": {
     "props": {
-      "blockClass":"banner-sale",
+      "blockClass": "banner-sale",
       "src": "assets/banners/banner-sale.png",
       "maxHeight": "569px"
     }
@@ -100,7 +97,7 @@
       "isFullModeStyle": false,
       "textPosition": "right",
       "imageUrl": "assets/banners/people-desktop.png",
-      "mobileImageUrl" : "assets/banners/people-mobile.png",
+      "mobileImageUrl": "assets/banners/people-mobile.png",
       "headline": "LOREM IPSUM",
       "subhead": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",
       "callToActionText": "LOREM IPSUM ->",
@@ -109,24 +106,120 @@
       "textAlignment": "left"
     }
   },
-  "flex-layout.row#people-banner": {
-    "props":{
+  "flex-layout.row#product-banners-mobile": {
+    "props": {
       "blockClass": "home-element-margin"
     },
     "children": [
-      //"image#banner-people",
-      "flex-layout.col#people-text"
+      "flex-layout.col#product-banners-mobile"
     ]
   },
-  "flex-layout.col#people-text": {
-    "props":{
+  "flex-layout.col#product-banners-mobile": {
+    "children": [
+      "rich-text#banners-title",
+      "slider-layout#product-banners"
+    ]
+  },
+  "slider-layout#product-banners": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "slider-products",
+      "fullWidth": false,
+      "showPaginationDots": "never"
     },
     "children": [
-      //"rich-text#people-title",
-      //"rich-text#people-description"
-
-
+      "image#product-banner-1-1",
+      "image#product-banner-1-2",
+      "image#product-banner-1-3",
+      "image#product-banner-2-1",
+      "image#product-banner-2-2",
+      "image#product-banner-2-3"
     ]
+  },
+  "flex-layout.row#product-banners-desktop": {
+    "props": {
+      "blockClass": "home-element-margin"
+    },
+    "children": [
+      "flex-layout.col#product-banners-desktop"
+    ]
+  },
+  "flex-layout.col#product-banners-desktop": {
+    "props": {},
+    "children": [
+      "rich-text#banners-title",
+      "flex-layout.row#banners-row-1",
+      "flex-layout.row#banners-row-2"
+    ]
+  },
+  "rich-text#banners-title": {
+    "props": {
+      "blockClass": "products-banners-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# TÍTULO DE BANNERS"
+    }
+  },
+  "flex-layout.row#banners-row-1": {
+    "props": {
+      "horizontalAlign": "between"
+    },
+    "children": [
+      "image#product-banner-1-1",
+      "image#product-banner-1-2",
+      "image#product-banner-1-3"
+    ]
+  },
+  "flex-layout.row#banners-row-2": {
+    "props": {
+      "horizontalAlign": "between",
+      "blockClass": "product-banners-row2"
+    },
+    "children": [
+      "image#product-banner-2-1",
+      "image#product-banner-2-2",
+      "image#product-banner-2-3"
+    ]
+  },
+  "image#product-banner-1-1": {
+    "props": {
+      "src": "assets/products/group1-clothes.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-1-2": {
+    "props": {
+      "src": "assets/products/group1-cosmetics.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-1-3": {
+    "props": {
+      "src": "assets/products/group1-electronics.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-2-1": {
+    "props": {
+      "src": "assets/products/group1-glasses.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-2-2": {
+    "props": {
+      "src": "assets/products/group1-perfume.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-2-3": {
+    "props": {
+      "src": "assets/products/group1-sneakers.png",
+      "maxHeight": "300px"
+    }
   }
-
 }

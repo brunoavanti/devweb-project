@@ -125,6 +125,11 @@
   margin-bottom: 20px;
 }
 
+.heading--products-banners-title{
+  margin: 0;
+  margin-bottom: 40px;
+}
+
 .container--link {
   justify-content: center;
 }

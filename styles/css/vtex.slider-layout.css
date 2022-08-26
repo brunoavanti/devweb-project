@@ -19,6 +19,8 @@
   max-width: 100%;
 }
 
+
+
 .paginationDotsContainer {
   margin-top: .5rem;
   margin-bottom: .5rem;
@@ -36,4 +38,9 @@
   padding-left: .5rem;
   padding-right: .5rem;
   min-height: 550px;
+}
+.caretIcon--shelf{
+  color: transparent;
+  background-color: #25282A;
+  background-image: url(assets/icons/whiteArrow.svg);
 }
