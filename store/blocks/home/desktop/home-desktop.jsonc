@@ -1,0 +1,29 @@
+{
+  "responsive-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#home-banner",
+      "flex-layout.row#deals",
+      "flex-layout.row#home-departments",
+      "info-card#home-people",
+      "flex-layout.row#shop-now",
+      "flex-layout.row#product-banners-desktop",
+      "flex-layout.row#shelf-home"
+    ]
+  },
+  "flex-layout.row#product-banners-desktop": {
+    "props": {
+      "blockClass": "home-element-margin"
+    },
+    "children": [
+      "flex-layout.col#product-banners-desktop"
+    ]
+  },
+  "flex-layout.col#product-banners-desktop": {
+    "props": {},
+    "children": [
+      "rich-text#banners-title",
+      "flex-layout.row#banners-row-1",
+      "flex-layout.row#banners-row-2"
+    ]
+  }
+}

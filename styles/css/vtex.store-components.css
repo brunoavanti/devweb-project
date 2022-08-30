@@ -19,6 +19,7 @@
 }
 
 @media screen and (max-width: 1000px) {
+  /* mobile */
   .infoCardContainer--info-card-home-people {
     display: flex;
     flex-flow: column-reverse;

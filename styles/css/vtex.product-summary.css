@@ -24,8 +24,8 @@
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 12px;
+  line-height: 17px;
   color: #2E2E2E;
 }
 
@@ -40,3 +40,8 @@
 .image {
   border-radius: 0.25rem;
 }
+
+.priceContainer {
+  display: inline-block;
+}
+

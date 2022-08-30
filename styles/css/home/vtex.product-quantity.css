@@ -1,0 +1,12 @@
+
+    /* vtex-numeric-stepper__input */ 
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input){
+    width:2rem;
+}
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button-container),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button){
+    width:1rem !important;
+}
+

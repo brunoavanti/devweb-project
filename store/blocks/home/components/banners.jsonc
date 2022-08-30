@@ -1,0 +1,64 @@
+{
+    "flex-layout.row#home-banner": {
+        "children": [
+          "list-context.image-list#home-banner"
+        ]
+      },
+      "list-context.image-list#home-banner": {
+        "children": [
+          "slider-layout#home-banner"
+        ],
+        "props": {
+          "preload": true,
+          "images": [
+            {
+              "image": "assets/banners/shopnow-desktop.png",
+              "mobileImage": "assets/banners/shopnow-mobile.png"
+            },
+            {
+              "image": "assets/banners/shopnow-desktop.png",
+              "mobileImage": "assets/banners/shopnow-mobile.png"
+            },
+            {
+              "image": "assets/banners/shopnow-desktop.png",
+              "mobileImage": "assets/banners/shopnow-mobile.png"
+            }
+          ]
+        }
+      },
+      "slider-layout#home-banner": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "never",
+          "blockClass": "carousel"
+        }
+      },
+      "flex-layout.row#shop-now": {
+        "props": {
+          "blockClass": "home-element-margin"
+        },
+        "children": [
+          "image#banner-newin",
+          "image#banner-sale"
+        ]
+      },
+      "image#banner-newin": {
+        "props": {
+          "blockClass": "banner-newin",
+          "src": "assets/banners/banner-newin.png",
+          "maxHeight": "569px"
+        }
+      },
+      "image#banner-sale": {
+        "props": {
+          "blockClass": "banner-sale",
+          "src": "assets/banners/banner-sale.png",
+          "maxHeight": "569px"
+        }
+      }
+}

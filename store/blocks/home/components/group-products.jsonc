@@ -1,0 +1,67 @@
+{
+  "rich-text#banners-title": {
+    "props": {
+      "blockClass": "products-banners-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# TÍTULO DE BANNERS"
+    }
+  },
+  "flex-layout.row#banners-row-1": {
+    "props": {
+      "horizontalAlign": "between"
+    },
+    "children": [
+      "image#product-banner-1-1",
+      "image#product-banner-1-2",
+      "image#product-banner-1-3"
+    ]
+  },
+  "flex-layout.row#banners-row-2": {
+    "props": {
+      "horizontalAlign": "between",
+      "blockClass": "product-banners-row2"
+    },
+    "children": [
+      "image#product-banner-2-1",
+      "image#product-banner-2-2",
+      "image#product-banner-2-3"
+    ]
+  },
+  "image#product-banner-1-1": {
+    "props": {
+      "src": "assets/products/group1-clothes.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-1-2": {
+    "props": {
+      "src": "assets/products/group1-cosmetics.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-1-3": {
+    "props": {
+      "src": "assets/products/group1-electronics.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-2-1": {
+    "props": {
+      "src": "assets/products/group1-glasses.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-2-2": {
+    "props": {
+      "src": "assets/products/group1-perfume.png",
+      "maxHeight": "300px"
+    }
+  },
+  "image#product-banner-2-3": {
+    "props": {
+      "src": "assets/products/group1-sneakers.png",
+      "maxHeight": "300px"
+    }
+  }
+}
